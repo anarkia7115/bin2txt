@@ -1,5 +1,5 @@
 bin2txt	: driver.o convert.o
-	gcc -lm -o bin2txt driver.o convert.o
+	gcc driver.o convert.o -lm -o bin2txt
 driver.o : driver.c
 	gcc -c driver.c
 convert.o : convert.c
